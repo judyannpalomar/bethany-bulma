@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
@@ -11255,5 +11256,122 @@ label.panel-block:hover {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+body #main-page {
+  background-image: url(/img/banner-bg.jpg);
+  background-size: cover;
+  min-height: 90vh;
+}
+
+body #main-page .navbar {
+  padding: 1.2em 0;
+  background: #0000004d;
+}
+
+body #main-page .navbar .navbar-brand {
+  letter-spacing: 1px;
+}
+
+body #main-page .navbar .navbar-brand .navbar-item:hover {
+  color: #8e8e8e;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+body #main-page .navbar .navbar-end {
+  font-size: 0.79rem;
+}
+
+body #main-page .navbar .navbar-end .navbar-item {
+  margin: 0 0.5rem;
+  color: white;
+}
+
+body #main-page .navbar .navbar-end .navbar-item:hover {
+  color: #ffd34e;
+  background: transparent;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+body #main-page .navbar .navbar-end .is-active {
+  color: #ffd34e;
+}
+
+body #main-page #hero {
+  padding: 7em 16em 0 16em;
+}
+
+body #main-page #hero h2 {
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+}
+
+body #main-page #hero h1 {
+  font-size: 7rem;
+  letter-spacing: 8px;
+}
+
+body #main-page #hero p {
+  font-size: 2.8rem;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+}
+
+body #main-page #hero .button {
+  padding: 1.5rem 3rem;
+  border-radius: 0;
+  border: 1.5px solid #ffdd57;
+}
+
+body #main-page #hero .button:hover {
+  background-color: white;
+  border: 1.5px solid #ffdd57;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+body #quote {
+  padding: 3rem 0 4rem 0;
+}
+
+body #quote p {
+  border: 5px solid #ffd34e;
+  padding: 3rem 0;
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+}
+
+body #feature {
+  background-color: #f8f8f8;
+}
+
+body #feature .columns {
+  padding: 4rem 0;
+}
+
+body #feature .columns .title-page {
+  margin: 0 1rem;
+}
+
+body #feature .columns .title-page .title {
+  margin-bottom: 1rem;
+}
+
+body #feature .columns .title-page .bottom-line {
+  background-color: #2b2b2b;
+  width: 34px;
+  height: 3px;
+  display: inline-block;
+}
+
+body #feature .columns .title-page p {
+  color: #8e8e8e;
 }
 /*# sourceMappingURL=style.css.map */

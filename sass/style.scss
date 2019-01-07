@@ -1,2 +1,116 @@
-@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Lato");
 @import "../node_modules/bulma/bulma.sass";
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+
+  #main-page {
+    background-image: url(/img/banner-bg.jpg);
+    background-size: cover;
+    min-height: 90vh;
+
+    .navbar {
+      padding: 1.2em 0;
+      background: #0000004d;
+
+      .navbar-brand {
+        letter-spacing: 1px;
+
+        .navbar-item:hover {
+          color: #8e8e8e;
+          transition: 0.5s ease-in-out;
+        }
+      }
+
+      .navbar-end {
+        font-size: 0.79rem;
+
+        .navbar-item {
+          margin: 0 0.5rem;
+          color: white; 
+        }
+
+        .navbar-item:hover {
+          color: #ffd34e;
+          background: transparent;
+          transition: 0.3s ease-out;
+        }
+
+        .is-active {
+          color: #ffd34e;
+        }
+      }
+    }
+
+    #hero {
+       padding: 7em 16em 0 16em;
+
+       h2 {
+           letter-spacing: 4px;
+           font-size: 1.5rem;
+       }
+
+       h1 {
+           font-size: 7rem;
+           letter-spacing: 8px;
+       }
+
+       p {
+           font-size: 2.8rem;
+           letter-spacing: 4px;
+           margin-bottom: 2rem;
+       }
+
+       .button {
+           padding: 1.5rem 3rem;
+           border-radius: 0;
+           border: 1.5px solid #ffdd57;
+       }
+
+       .button:hover {
+           background-color: white;
+           border: 1.5px solid #ffdd57;
+           transition: 0.5s ease-in-out;
+       }
+    }
+  }
+
+  #quote {
+      padding: 3rem 0 4rem 0;
+
+      p {
+          border: 5px solid #ffd34e;
+          padding: 3rem 0;
+          font-size: 1.5rem;
+          letter-spacing: 1.2px; 
+      }
+  }
+
+  #feature {
+      background-color: #f8f8f8;
+
+      .columns {
+          padding: 4rem 0;
+
+          .title-page {
+              margin: 0 1rem;
+
+              .title {
+                  margin-bottom: 1rem;
+              }
+
+              .bottom-line {
+                  background-color: #2b2b2b;
+                  width: 34px;
+                  height: 3px;
+                  display: inline-block;
+              }
+
+              p {
+                  color: #8e8e8e;
+              }
+          }
+      }
+  }
+}

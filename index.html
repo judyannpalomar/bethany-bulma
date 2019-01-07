@@ -1,37 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My custom Bulma website</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-     <h1 class="title">
-        Bulma
-      </h1>
-
-      <p class="subtitle">
-        Modern CSS framework based on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
-      </p>
-
-      <div class="field">
-        <div class="control">
-          <input class="input" type="text" placeholder="Input">
+    <title>Bethany Using Bulma Framework</title>
+</head>
+<body>
+    <section id="main-page">
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item is-uppercase is-size-3 has-text-white has-text-weight-semibold">Bethany</a>
+    
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenuBar">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+    
+                <div id="navbarMenuBar" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="#" class="navbar-item is-active is-uppercase">
+                            Home
+                        </a>
+                        <a href="#feature" class="navbar-item is-uppercase">
+                            Feature
+                        </a>
+                        <a href="#portfolio" class="navbar-item is-uppercase">
+                            Portfolio
+                        </a>
+                        <a href="#contact" class="navbar-item is-uppercase">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    
+        <div id="hero">
+            <div class="hero-body has-text-centered">
+                <h2 class="subtitle has-text-white is-uppercase has-text-weight-bold is-marginless">Web Design &
+                    Development</h2>
+                <h1 class=" has-text-white is-uppercase has-text-weight-bold">Bethany</h1>
+                <p class="has-text-white has-text-weight-bold is-uppercase">We Create Amazing Designs</p>
+                <a class="button is-warning is-uppercase">Get Started</a>
+            </div>
         </div>
-      </div>
+    </section>
+    
+    <section id="quote">
+        <div class="container">
+            <p class="has-text-centered">“Make it simple, but significant.” –Don Draper</p>
+        </div>
+    </section>
 
-      <div class="field">
-        <p class="control">
-          <span class="select">
-            <select>
-              <option>Select dropdown</option>
-            </select>
-          </span>
-        </p>
-      </div>
+    <section id="feature">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-one-third">
+                    <div class="title-page">
+                        <h1 class="title has-text-black">Features</h1>
+                        <hr class="bottom-line">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua..</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <article class="media">
+                        <figure class="media-left">
+                                <i class="fas fa-paint-brush fa-2x"></i>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title">One Column</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </article>
+                   
+                </div>
 
-      <div class="buttons">
-        <a class="button is-primary">Primary</a>
-        <a class="button is-link">Link</a>
-      </div>
-  </body>
+
+                <div class="column is-narrow">
+                    <p class="bd-notification is-primary">
+                        <code class="html">is-narrow</code><br>
+                        Third Column
+                    </p>
+                </div>
+                <div class="column is-narrow">
+                    <p class="bd-notification is-primary">
+                        <code class="html">is-narrow</code><br>
+                        The Fourth Column
+                    </p>
+                </div>
+                <div class="column is-narrow">
+                    <p class="bd-notification is-primary">
+                        <code class="html">is-narrow</code><br>
+                        Fifth Column
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      
+      
+</body>
 </html>
