@@ -6,14 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Bethany Using Bulma Framework</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > 100) {
+              $(".navbar").css("background" , "#100c08eb");
+            }
+      
+            else{
+                $(".navbar").css("background" , "transparent");  	
+            }
+        })
+      })
+    </script>
+
 </head>
 <body>
-    <section id="main-page">
+    <section id="main-page" class="wow fadeIn">
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="container">
                 <div class="navbar-brand">
-                    <a class="navbar-item is-uppercase is-size-3 has-text-white has-text-weight-semibold">Bethany</a>
+                    <a class="navbar-item is-uppercase has-text-white has-text-weight-semibold">Bethany</a>
     
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenuBar">
                         <span aria-hidden="true"></span>
@@ -24,16 +41,16 @@
     
                 <div id="navbarMenuBar" class="navbar-menu">
                     <div class="navbar-end">
-                        <a href="#" class="navbar-item is-active is-uppercase">
+                        <a data-scroll href="#hero" class="navbar-item is-active is-uppercase">
                             Home
                         </a>
-                        <a href="#feature" class="navbar-item is-uppercase">
+                        <a data-scroll href="#feature" class="navbar-item is-uppercase">
                             Feature
                         </a>
-                        <a href="#portfolio" class="navbar-item is-uppercase">
+                        <a data-scroll href="#portfolio-page" class="navbar-item is-uppercase">
                             Portfolio
                         </a>
-                        <a href="#contact" class="navbar-item is-uppercase">
+                        <a data-scroll href="#contact-page" class="navbar-item is-uppercase">
                             Contact
                         </a>
                     </div>
@@ -42,9 +59,9 @@
             </div>
         </nav>
     
-        <div id="hero">
+        <div id="hero" class="wow zoomIn page-section" data-wow-duration="2s">
             <div class="hero-body has-text-centered">
-                <h2 class="subtitle has-text-white is-uppercase has-text-weight-bold is-marginless">Web Design &
+                <h2 class="subtitle has-text-white is-uppercase is-marginless has-text-weight-bold">Web Design &
                     Development</h2>
                 <h1 class=" has-text-white is-uppercase has-text-weight-bold">Bethany</h1>
                 <p class="has-text-white has-text-weight-bold is-uppercase">We Create Amazing Designs</p>
@@ -58,58 +75,250 @@
             <p class="has-text-centered">“Make it simple, but significant.” –Don Draper</p>
         </div>
     </section>
-
-    <section id="feature">
+    
+    
+    <section id="feature" class="page-section">
         <div class="container">
-            <div class="columns is-multiline">
-                <div class="column is-one-third">
+            <div class="columns">
+                <div class="column is-one-quarter">
                     <div class="title-page">
-                        <h1 class="title has-text-black">Features</h1>
-                        <hr class="bottom-line">
+                        <h1 class="title has-text-black wow slideInLeft">Features</h1>
+                        <hr>
+                        <p class="wow slideInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua..</p>
+                    </div>
+                </div>
+                <div class="column wow slideInRight">
+                    <div class="is-flex">
+                        <div class="icon">
+                            <i class="fas fa-paint-brush fa-2x"></i>
+                        </div>
+                        <div class="content">
+                            <h1 class="has-text-weight-light">Easy to Learn and Design</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column wow slideInRight">
+                    <div class="is-flex">
+                        <div class="icon">
+                            <i class="fas fa-cogs fa-2x"></i>
+                        </div>
+                        <div class="content">
+                            <h1 class="has-text-weight-light">Bulma v0.7.2</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-offset-one-quarter wow slideInRight">
+                    <div class="is-flex">
+                        <div class="icon">
+                            <i class="fas fa-mobile-alt fa-2x"></i>
+                        </div>
+                        <div class="content">
+                            <h1 class="has-text-weight-light">Responsive Design</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column wow slideInRight">
+                    <div class="is-flex">
+                        <div class="icon">
+                            <i class="fas fa-desktop fa-2x"></i>
+                        </div>
+                        <div class="content">
+                            <h1 class="has-text-weight-light">No Coding, No Shortcodes</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-offset-one-quarter wow slideInRight">
+                    <div class="is-flex">
+                        <div class="icon">
+                            <i class="far fa-lightbulb fa-2x"></i>
+                        </div>
+                        <div class="content">
+                            <h1 class="has-text-weight-light">High Coversion</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column wow slideInRight">
+                    <div class="is-flex">
+                        <div class="icon">
+                            <i class="far fa-clock fa-2x"></i>
+                        </div>
+                        <div class="content">
+                            <h1 class="has-text-weight-light">Save Tons of Time</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="subscribe-page">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-three-quarters">
+                    <h1 class="subs-title has-text-white">Subcribe For Updates</h1>
+                    <p class="has-text-white">Join our 1000+ subscribers and get access to the latest tools, freebies,
+                        product announcements and much more!</p>
+                </div>
+                <div class="column">
+                    <a class="button is-warning is-radiusless is-uppercase">Subscribe Now</a>
+                </div>
+            </div>
+    </section>
+    
+    <section id="portfolio-page" class="page-section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <div class="title-page wow slideInUp">
+                        <h1 class="title has-text-black">Portfolio</h1>
+                        <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua..</p>
                     </div>
                 </div>
-                <div class="column">
-                    <article class="media">
-                        <figure class="media-left">
-                                <i class="fas fa-paint-brush fa-2x"></i>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <h1 class="title">One Column</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
+                <div class="column wow slideInRight">
+                    <div class="content">
+                        <img src="img/p1.jpg" alt="photo" class="image">
+                        <div class="overlay">
+                            <div class="text">Portfolio 1 <br> Lorem ipsum dolor sit amet</div>
                         </div>
-                    </article>
-                   
+                    </div>
                 </div>
-
-
-                <div class="column is-narrow">
-                    <p class="bd-notification is-primary">
-                        <code class="html">is-narrow</code><br>
-                        Third Column
-                    </p>
+                <div class="column wow slideInRight">
+                    <div class="content">
+                        <img src="img/p2.jpg" alt="photo" class="image">
+                        <div class="overlay">
+                            <div class="text">Portfolio 2 <br> Lorem ipsum dolor sit amet</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="column is-narrow">
-                    <p class="bd-notification is-primary">
-                        <code class="html">is-narrow</code><br>
-                        The Fourth Column
-                    </p>
+                <div class="column wow slideInRight">
+                    <div class="content">
+                        <img src="img/p3.jpg" alt="photo" class="image">
+                        <div class="overlay">
+                            <div class="text">Portfolio 3 <br> Lorem ipsum dolor sit amet</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="column is-narrow">
-                    <p class="bd-notification is-primary">
-                        <code class="html">is-narrow</code><br>
-                        Fifth Column
-                    </p>
+            </div>
+            <div class="columns">
+                <div class="column is-offset-one-quarter wow slideInRight">
+                    <div class="content">
+                        <img src="img/p4.jpg" alt="photo" class="image">
+                        <div class="overlay">
+                            <div class="text">Portfolio 4 <br> Lorem ipsum dolor sit amet</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column wow slideInRight">
+                    <div class="content">
+                        <img src="img/p5.jpg" alt="photo" class="image">
+                        <div class="overlay">
+                            <div class="text">Portfolio 5 <br> Lorem ipsum dolor sit amet</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column wow slideInRight">
+                    <div class="content">
+                        <img src="img/p6.jpg" alt="photo" class="image">
+                        <div class="overlay">
+                            <div class="text">Portfolio 6 <br> Lorem ipsum dolor sit amet</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact-page" class="page-section wow slideInUp">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-two-thirds">
+                    <div class="title-page">
+                        <h1 class="title has-text-black">Contact Us</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-tablet">
+                <div class="column">
+                    <div class="contact-title is-size-4">Email Us</div>
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Your Name" data-msg="Please enter at least 4 chars">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input class="input" type="text" placeholder="Your Email" data-msg="Please enter at least 4 chars">
+                    </div>
+                    <div class="field">
+                        <input class="input" type="text" placeholder="Subject" data-msg="Please enter at least 4 chars">
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Message" data-msg="Please enter at least 4 chars"></textarea>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <button class="button is-link">Send</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="contact-title is-size-4">Visit Us</div>
+                    <div class="location">
+                        <p><span aria-hidden="true" class="fas fa-map-marker-alt"></span>Via Principe Amedeo 9, Torino,
+                            Italy</p>
+                        <p><span aria-hidden="true" class="fa fa-phone"></span>Phone: 0039 XXX XX XX XXX</p>
+                        <p><span aria-hidden="true" class="fa fa-envelope"></span>Email: <a href="" class="cont-link">hi@yourdomain.com</a></p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="cont-icon">
+                        <span aria-hidden="true" class="far fa-envelope is-hidden-mobile"></span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-      
-      
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/navbar-toggle.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
 </body>
 </html>
